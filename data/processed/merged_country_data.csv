@@ -1,0 +1,162 @@
+country_code,country_name,gun_homicide_rate,population,gini,drug_offense_rate,region
+AFG,Afghanistan,4.7,41128771,,,Sub-Saharan Africa
+ALB,Albania,1.3,2842321,30.0,45.0,Eastern Europe
+DZA,Algeria,0.5,44903225,27.6,85.0,Middle East & N. Africa
+AGO,Angola,4.8,34503774,51.3,,Sub-Saharan Africa
+ARG,Argentina,2.2,46234830,42.3,102.0,South America
+ARM,Armenia,0.4,2780469,29.9,38.0,Eastern Europe
+AUS,Australia,0.15,25978935,34.3,605.0,Oceania
+AUT,Austria,0.15,9041851,30.5,340.0,Western Europe
+AZE,Azerbaijan,0.6,10093121,26.6,42.0,Eastern Europe
+BHS,Bahamas,24.5,409984,,310.0,Central America & Caribbean
+BHR,Bahrain,0.1,1472233,,,Middle East & N. Africa
+BGD,Bangladesh,1.1,169356251,32.4,72.0,South & Central Asia
+BRB,Barbados,7.4,281200,,,Central America & Caribbean
+BLR,Belarus,0.2,9534954,25.3,120.0,Eastern Europe
+BEL,Belgium,0.3,11584008,27.2,340.0,Western Europe
+BLZ,Belize,19.4,405272,53.3,195.0,Central America & Caribbean
+BEN,Benin,0.8,12996895,37.8,12.0,Sub-Saharan Africa
+BOL,Bolivia,3.0,12224110,43.6,65.0,South America
+BIH,Bosnia and Herzegovina,0.6,3233526,33.0,75.0,Eastern Europe
+BWA,Botswana,2.8,2588423,53.3,210.0,Sub-Saharan Africa
+BRA,Brazil,21.9,214326223,52.9,155.0,South America
+BGR,Bulgaria,0.5,6781953,40.3,105.0,Eastern Europe
+BFA,Burkina Faso,1.5,22100683,47.3,8.0,Sub-Saharan Africa
+BDI,Burundi,2.1,12551213,38.6,,Sub-Saharan Africa
+KHM,Cambodia,0.8,16767842,38.0,48.0,East & SE Asia
+CMR,Cameroon,2.9,27198628,46.6,15.0,Sub-Saharan Africa
+CAN,Canada,0.75,38929902,33.3,280.0,North America
+CAF,Central African Republic,6.1,5579144,56.2,,Sub-Saharan Africa
+TCD,Chad,3.2,17179740,37.5,,Sub-Saharan Africa
+CHL,Chile,2.1,19603733,44.9,210.0,South America
+CHN,China,0.04,1412175000,38.2,35.0,East & SE Asia
+COL,Colombia,13.1,51874024,51.5,120.0,South America
+COG,Congo,4.7,5970424,48.9,,Sub-Saharan Africa
+COD,DR Congo,3.0,95894118,42.1,,Sub-Saharan Africa
+CRI,Costa Rica,6.3,5180829,48.2,105.0,Central America & Caribbean
+CIV,Cote d'Ivoire,1.6,27478249,37.2,,Sub-Saharan Africa
+HRV,Croatia,0.3,3855600,29.7,165.0,Eastern Europe
+CUB,Cuba,2.5,11212191,,,Central America & Caribbean
+CYP,Cyprus,0.2,1251488,31.4,185.0,Western Europe
+CZE,Czech Republic,0.12,10827529,25.3,85.0,Eastern Europe
+DNK,Denmark,0.15,5903037,28.2,380.0,Western Europe
+DOM,Dominican Republic,11.2,11228821,39.6,52.0,Central America & Caribbean
+ECU,Ecuador,5.6,17797737,47.3,68.0,South America
+EGY,Egypt,0.4,109262178,31.5,35.0,Middle East & N. Africa
+SLV,El Salvador,17.5,6314167,38.8,42.0,Central America & Caribbean
+GNQ,Equatorial Guinea,2.1,1634466,,,Sub-Saharan Africa
+ERI,Eritrea,2.8,3620312,,,Sub-Saharan Africa
+EST,Estonia,0.3,1348840,30.4,185.0,Eastern Europe
+SWZ,Eswatini,6.3,1192271,54.6,,Sub-Saharan Africa
+ETH,Ethiopia,3.5,123379924,35.0,15.0,Sub-Saharan Africa
+FJI,Fiji,0.5,929766,36.7,,Oceania
+FIN,Finland,0.2,5556106,27.7,420.0,Western Europe
+FRA,France,0.3,67935660,31.6,290.0,Western Europe
+GAB,Gabon,2.4,2341179,38.0,,Sub-Saharan Africa
+GEO,Georgia,0.8,3736400,34.5,125.0,Eastern Europe
+DEU,Germany,0.06,83369843,31.7,325.0,Western Europe
+GHA,Ghana,1.7,33475870,43.5,28.0,Sub-Saharan Africa
+GRC,Greece,0.4,10384971,33.1,125.0,Western Europe
+GTM,Guatemala,18.5,17602431,48.3,35.0,Central America & Caribbean
+GIN,Guinea,2.6,13531906,29.6,,Sub-Saharan Africa
+GNB,Guinea-Bissau,3.4,2060721,50.7,,Sub-Saharan Africa
+GUY,Guyana,7.1,808726,45.1,78.0,South America
+HTI,Haiti,12.0,11584996,41.1,,Central America & Caribbean
+HND,Honduras,26.7,10278345,48.2,38.0,Central America & Caribbean
+HUN,Hungary,0.12,9750149,30.6,55.0,Eastern Europe
+ISL,Iceland,0.0,376248,26.1,310.0,Western Europe
+IND,India,0.9,1417173173,35.7,18.0,South & Central Asia
+IDN,Indonesia,0.1,275501339,37.9,38.0,East & SE Asia
+IRN,Iran,1.3,87923432,40.9,450.0,Middle East & N. Africa
+IRQ,Iraq,5.2,43533592,29.5,22.0,Middle East & N. Africa
+IRL,Ireland,0.2,5127170,30.6,290.0,Western Europe
+ISR,Israel,0.7,9557500,39.0,210.0,Middle East & N. Africa
+ITA,Italy,0.35,58940425,35.2,165.0,Western Europe
+JAM,Jamaica,30.7,2827695,35.0,135.0,Central America & Caribbean
+JPN,Japan,0.01,125124989,32.9,22.0,East & SE Asia
+JOR,Jordan,0.5,11148278,33.7,42.0,Middle East & N. Africa
+KAZ,Kazakhstan,0.5,19397998,29.2,82.0,South & Central Asia
+KEN,Kenya,2.3,54027487,40.8,48.0,Sub-Saharan Africa
+KOR,South Korea,0.02,51628117,31.4,52.0,East & SE Asia
+KWT,Kuwait,0.4,4268873,,32.0,Middle East & N. Africa
+KGZ,Kyrgyzstan,1.2,6747815,29.0,55.0,South & Central Asia
+LVA,Latvia,0.5,1883008,35.1,85.0,Eastern Europe
+LBN,Lebanon,3.0,5489739,31.8,95.0,Middle East & N. Africa
+LSO,Lesotho,3.1,2281454,44.9,,Sub-Saharan Africa
+LBR,Liberia,3.2,5302681,35.3,,Sub-Saharan Africa
+LBY,Libya,4.5,6812341,,,Middle East & N. Africa
+LTU,Lithuania,0.4,2831639,36.9,95.0,Eastern Europe
+LUX,Luxembourg,0.1,660809,35.4,385.0,Western Europe
+MDG,Madagascar,1.4,29611714,42.6,,Sub-Saharan Africa
+MWI,Malawi,1.0,19889742,44.7,,Sub-Saharan Africa
+MYS,Malaysia,0.3,33938221,41.2,115.0,East & SE Asia
+MLI,Mali,3.5,22593590,36.1,10.0,Sub-Saharan Africa
+MLT,Malta,0.3,531113,30.7,155.0,Western Europe
+MRT,Mauritania,1.2,4614974,32.6,,Sub-Saharan Africa
+MUS,Mauritius,0.4,1265740,36.8,145.0,Sub-Saharan Africa
+MEX,Mexico,16.3,127504125,45.4,55.0,North America
+MDA,Moldova,0.5,2615199,26.0,65.0,Eastern Europe
+MNG,Mongolia,0.6,3398366,32.7,42.0,East & SE Asia
+MNE,Montenegro,1.4,616177,36.8,115.0,Eastern Europe
+MAR,Morocco,0.3,37457971,39.5,85.0,Middle East & N. Africa
+MOZ,Mozambique,3.0,32969518,54.0,18.0,Sub-Saharan Africa
+MMR,Myanmar,2.3,54179306,30.7,175.0,East & SE Asia
+NAM,Namibia,5.2,2567012,59.1,110.0,Sub-Saharan Africa
+NPL,Nepal,0.9,30034989,32.8,22.0,South & Central Asia
+NLD,Netherlands,0.2,17590672,28.5,165.0,Western Europe
+NZL,New Zealand,0.18,5123200,36.0,455.0,Oceania
+NIC,Nicaragua,5.3,6948392,46.2,32.0,Central America & Caribbean
+NER,Niger,1.7,25252722,37.3,,Sub-Saharan Africa
+NGA,Nigeria,3.2,218541212,35.1,20.0,Sub-Saharan Africa
+NOR,Norway,0.1,5457127,27.6,420.0,Western Europe
+OMN,Oman,0.2,4576298,,,Middle East & N. Africa
+PAK,Pakistan,3.0,231402117,29.6,55.0,South & Central Asia
+PAN,Panama,7.8,4408581,49.8,85.0,Central America & Caribbean
+PNG,Papua New Guinea,5.6,10142619,41.9,,Oceania
+PRY,Paraguay,5.5,6780744,45.1,48.0,South America
+PER,Peru,3.7,33684208,43.8,72.0,South America
+PHL,Philippines,5.4,115559009,42.3,180.0,East & SE Asia
+POL,Poland,0.08,36821749,29.7,85.0,Eastern Europe
+PRT,Portugal,0.3,10352042,33.6,155.0,Western Europe
+QAT,Qatar,0.1,2695122,,28.0,Middle East & N. Africa
+ROU,Romania,0.1,19659267,34.8,35.0,Eastern Europe
+RUS,Russia,2.7,144236933,36.0,155.0,Eastern Europe
+RWA,Rwanda,1.1,13461888,43.7,,Sub-Saharan Africa
+SAU,Saudi Arabia,0.6,36408820,45.9,42.0,Middle East & N. Africa
+SEN,Senegal,1.4,17316449,40.3,22.0,Sub-Saharan Africa
+SRB,Serbia,0.5,6664449,36.2,95.0,Eastern Europe
+SLE,Sierra Leone,1.8,8420641,35.7,,Sub-Saharan Africa
+SGP,Singapore,0.02,5637022,45.9,45.0,East & SE Asia
+SVK,Slovakia,0.2,5643453,25.2,48.0,Eastern Europe
+SVN,Slovenia,0.1,2119675,24.6,135.0,Eastern Europe
+SOM,Somalia,5.6,17597511,,,Sub-Saharan Africa
+ZAF,South Africa,10.2,59893885,63.0,195.0,Sub-Saharan Africa
+SSD,South Sudan,6.5,10913164,,,Sub-Saharan Africa
+ESP,Spain,0.12,47778340,33.0,145.0,Western Europe
+LKA,Sri Lanka,1.4,22156000,37.7,185.0,South & Central Asia
+SDN,Sudan,5.1,45657202,34.2,,Sub-Saharan Africa
+SUR,Suriname,5.1,612985,57.9,55.0,South America
+SWE,Sweden,0.4,10486941,30.0,395.0,Western Europe
+CHE,Switzerland,0.15,8775760,33.1,470.0,Western Europe
+SYR,Syria,3.0,22125249,,,Middle East & N. Africa
+TJK,Tajikistan,0.5,9952787,34.0,,South & Central Asia
+TZA,Tanzania,2.3,63588334,40.5,,Sub-Saharan Africa
+THA,Thailand,2.5,71697030,34.9,345.0,East & SE Asia
+TLS,Timor-Leste,1.0,1341296,28.7,,East & SE Asia
+TGO,Togo,2.3,8848699,43.1,,Sub-Saharan Africa
+TTO,Trinidad and Tobago,20.3,1525663,40.3,155.0,Central America & Caribbean
+TUN,Tunisia,0.3,12356117,32.8,35.0,Middle East & N. Africa
+TUR,Turkey,1.8,84775404,41.9,185.0,Middle East & N. Africa
+TKM,Turkmenistan,1.0,6341855,40.8,,South & Central Asia
+UGA,Uganda,3.3,45853778,42.7,30.0,Sub-Saharan Africa
+UKR,Ukraine,1.6,43792855,25.6,48.0,Eastern Europe
+ARE,United Arab Emirates,0.3,9441129,32.5,72.0,Middle East & N. Africa
+GBR,United Kingdom,0.04,67508936,35.1,185.0,Western Europe
+USA,United States,4.46,333287557,39.8,585.0,North America
+URY,Uruguay,3.5,3422794,40.2,115.0,South America
+UZB,Uzbekistan,0.5,35163944,35.3,32.0,South & Central Asia
+VEN,Venezuela,33.3,28301696,44.8,42.0,South America
+VNM,Vietnam,0.5,98186856,36.8,28.0,East & SE Asia
+YEM,Yemen,4.8,33696614,36.7,,Middle East & N. Africa
+ZMB,Zambia,2.8,19473125,57.1,32.0,Sub-Saharan Africa
+ZWE,Zimbabwe,2.5,15993524,50.3,45.0,Sub-Saharan Africa

@@ -1,0 +1,17 @@
+[project]
+name = "gun-violence-analysis"
+version = "0.1.0"
+description = "Country-level gun violence correlation analysis"
+requires-python = ">=3.9.18"
+dependencies = [
+    "jupyter>=1.1.1",
+    "matplotlib>=3.9.4",
+    "numpy>=2.0.2",
+    "pandas>=2.3.3",
+    "plotly>=5.24.0",
+    "python-dotenv>=1.2.1",
+    "requests>=2.32.5",
+    "papermill>=2.6.0",
+    "nbconvert>=7.17.0",
+    "scipy>=1.13.1",
+]
