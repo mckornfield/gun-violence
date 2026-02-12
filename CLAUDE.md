@@ -15,10 +15,14 @@ Notebooks must run in order (later ones depend on CSVs from earlier ones):
 3. `03_gini_correlation` — Scatter: gun homicide vs Gini coefficient (with regression)
 4. `04_drug_correlation` — Scatter: gun homicide vs drug offense rate (with regression)
 5. `05_population_correlation` — Scatter: gun homicide vs population (with regression)
+6. `06_gun_ownership_correlation` — Scatter + choropleth: gun homicide vs civilian gun ownership (with regression)
+7. `07_gun_control_correlation` — Scatter + strip/box plot + choropleth: gun homicide vs gun control strictness (with regression)
 
 ## Data Sources
 - **World Bank API** — Free, no key needed. Population (`SP.POP.TOTL`), Gini (`SI.POV.GINI`)
 - **UNODC** — Gun homicide rates, drug offense rates (embedded fallback data)
+- **Small Arms Survey 2017** — Civilian firearm ownership per 100 persons (embedded)
+- **Gun control strictness** — Custom ordinal scale 1-5 (embedded, see README for details)
 - All datasets joined on ISO alpha-3 country codes
 
 ## Running Notebooks

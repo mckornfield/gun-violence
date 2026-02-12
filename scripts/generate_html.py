@@ -15,6 +15,8 @@ NOTEBOOKS = [
     "03_gini_correlation.ipynb",
     "04_drug_correlation.ipynb",
     "05_population_correlation.ipynb",
+    "06_gun_ownership_correlation.ipynb",
+    "07_gun_control_correlation.ipynb",
 ]
 
 

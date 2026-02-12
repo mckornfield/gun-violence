@@ -133,6 +133,50 @@ def get_drug_offense_rates() -> pd.DataFrame:
 
 
 # ---------------------------------------------------------------------------
+# Gun Ownership Rates (Small Arms Survey 2017)
+# ---------------------------------------------------------------------------
+
+def get_gun_ownership_rates() -> pd.DataFrame:
+    """Get civilian firearm ownership rates per 100 persons by country.
+
+    Uses embedded data from the Small Arms Survey 2017 estimates.
+
+    Returns DataFrame with columns: country_code, country_name, guns_per_100.
+    """
+    rows = []
+    for code, (name, rate) in _GUN_OWNERSHIP_FALLBACK.items():
+        rows.append({
+            "country_code": code,
+            "country_name": name,
+            "guns_per_100": rate,
+        })
+    return pd.DataFrame(rows)
+
+
+# ---------------------------------------------------------------------------
+# Gun Control Strictness (Custom ordinal scale)
+# ---------------------------------------------------------------------------
+
+def get_gun_control_strictness() -> pd.DataFrame:
+    """Get gun control strictness rating by country.
+
+    Custom ordinal scale 1-5:
+      1 = Very Permissive, 2 = Permissive, 3 = Moderate,
+      4 = Strict, 5 = Very Strict.
+
+    Returns DataFrame with columns: country_code, country_name, gun_control_strictness.
+    """
+    rows = []
+    for code, (name, level) in _GUN_CONTROL_STRICTNESS_FALLBACK.items():
+        rows.append({
+            "country_code": code,
+            "country_name": name,
+            "gun_control_strictness": level,
+        })
+    return pd.DataFrame(rows)
+
+
+# ---------------------------------------------------------------------------
 # Region mapping for scatter plot coloring
 # ---------------------------------------------------------------------------
 
@@ -568,4 +612,181 @@ _COUNTRY_REGIONS = {
     # Oceania
     "AUS": "Oceania", "NZL": "Oceania", "FJI": "Oceania",
     "PNG": "Oceania",
+}
+
+# Gun ownership: civilian firearms per 100 persons (Small Arms Survey 2017)
+# Format: code -> (name, guns_per_100)
+_GUN_OWNERSHIP_FALLBACK = {
+    "AFG": ("Afghanistan", 12.5), "ALB": ("Albania", 8.6),
+    "DZA": ("Algeria", 7.1), "AGO": ("Angola", 3.0),
+    "ARG": ("Argentina", 10.2), "ARM": ("Armenia", 4.4),
+    "AUS": ("Australia", 13.7), "AUT": ("Austria", 30.0),
+    "AZE": ("Azerbaijan", 3.6), "BHS": ("Bahamas", 5.3),
+    "BHR": ("Bahrain", 11.6), "BGD": ("Bangladesh", 0.5),
+    "BRB": ("Barbados", 3.2), "BLR": ("Belarus", 7.3),
+    "BEL": ("Belgium", 12.2), "BLZ": ("Belize", 10.0),
+    "BEN": ("Benin", 1.4), "BOL": ("Bolivia", 2.8),
+    "BIH": ("Bosnia and Herzegovina", 31.2),
+    "BWA": ("Botswana", 3.3), "BRA": ("Brazil", 8.3),
+    "BGR": ("Bulgaria", 6.2), "BFA": ("Burkina Faso", 1.1),
+    "BDI": ("Burundi", 1.6), "KHM": ("Cambodia", 4.5),
+    "CMR": ("Cameroon", 1.1), "CAN": ("Canada", 34.7),
+    "CAF": ("Central African Republic", 1.0),
+    "TCD": ("Chad", 1.3), "CHL": ("Chile", 10.5),
+    "CHN": ("China", 3.6), "COL": ("Colombia", 10.1),
+    "COG": ("Congo", 2.1), "COD": ("DR Congo", 1.4),
+    "CRI": ("Costa Rica", 10.0), "CIV": ("Cote d'Ivoire", 2.8),
+    "HRV": ("Croatia", 21.7), "CUB": ("Cuba", 4.5),
+    "CYP": ("Cyprus", 36.4), "CZE": ("Czech Republic", 16.3),
+    "DNK": ("Denmark", 9.9), "DOM": ("Dominican Republic", 8.7),
+    "ECU": ("Ecuador", 3.8), "EGY": ("Egypt", 3.5),
+    "SLV": ("El Salvador", 5.8), "ERI": ("Eritrea", 0.5),
+    "EST": ("Estonia", 9.2), "SWZ": ("Eswatini", 3.5),
+    "ETH": ("Ethiopia", 0.6), "FJI": ("Fiji", 0.5),
+    "FIN": ("Finland", 32.4), "FRA": ("France", 19.6),
+    "GAB": ("Gabon", 2.0), "GMB": ("Gambia", 1.3),
+    "GEO": ("Georgia", 7.5), "DEU": ("Germany", 19.6),
+    "GHA": ("Ghana", 1.4), "GRC": ("Greece", 22.5),
+    "GTM": ("Guatemala", 12.0), "GIN": ("Guinea", 1.1),
+    "GNB": ("Guinea-Bissau", 2.0), "GUY": ("Guyana", 4.0),
+    "HTI": ("Haiti", 1.7), "HND": ("Honduras", 14.1),
+    "HUN": ("Hungary", 5.5), "ISL": ("Iceland", 30.3),
+    "IND": ("India", 5.3), "IDN": ("Indonesia", 0.5),
+    "IRN": ("Iran", 7.3), "IRQ": ("Iraq", 19.6),
+    "IRL": ("Ireland", 7.2), "ISR": ("Israel", 7.3),
+    "ITA": ("Italy", 14.4), "JAM": ("Jamaica", 8.1),
+    "JPN": ("Japan", 0.3), "JOR": ("Jordan", 11.5),
+    "KAZ": ("Kazakhstan", 3.9), "KEN": ("Kenya", 1.7),
+    "KOR": ("South Korea", 0.2), "KWT": ("Kuwait", 24.8),
+    "KGZ": ("Kyrgyzstan", 3.9), "LAO": ("Laos", 2.2),
+    "LVA": ("Latvia", 10.1), "LBN": ("Lebanon", 31.9),
+    "LSO": ("Lesotho", 2.7), "LBR": ("Liberia", 2.2),
+    "LBY": ("Libya", 15.5), "LTU": ("Lithuania", 8.1),
+    "LUX": ("Luxembourg", 15.3), "MDG": ("Madagascar", 0.5),
+    "MWI": ("Malawi", 0.7), "MYS": ("Malaysia", 1.5),
+    "MLI": ("Mali", 1.5), "MLT": ("Malta", 11.9),
+    "MRT": ("Mauritania", 3.5), "MUS": ("Mauritius", 3.5),
+    "MEX": ("Mexico", 16.8), "MDA": ("Moldova", 4.0),
+    "MNG": ("Mongolia", 7.3), "MNE": ("Montenegro", 23.1),
+    "MAR": ("Morocco", 5.1), "MOZ": ("Mozambique", 2.8),
+    "MMR": ("Myanmar", 1.6), "NAM": ("Namibia", 5.6),
+    "NPL": ("Nepal", 2.0), "NLD": ("Netherlands", 2.6),
+    "NZL": ("New Zealand", 26.3), "NIC": ("Nicaragua", 6.7),
+    "NER": ("Niger", 0.7), "NGA": ("Nigeria", 1.5),
+    "NOR": ("Norway", 28.8), "OMN": ("Oman", 25.5),
+    "PAK": ("Pakistan", 22.3), "PAN": ("Panama", 7.7),
+    "PNG": ("Papua New Guinea", 3.9), "PRY": ("Paraguay", 17.0),
+    "PER": ("Peru", 5.0), "PHL": ("Philippines", 3.6),
+    "POL": ("Poland", 2.5), "PRT": ("Portugal", 8.5),
+    "QAT": ("Qatar", 19.2), "ROU": ("Romania", 2.6),
+    "RUS": ("Russia", 12.3), "RWA": ("Rwanda", 0.6),
+    "SAU": ("Saudi Arabia", 19.3), "SEN": ("Senegal", 2.0),
+    "SRB": ("Serbia", 39.1), "SLE": ("Sierra Leone", 0.6),
+    "SGP": ("Singapore", 0.3), "SVK": ("Slovakia", 8.3),
+    "SVN": ("Slovenia", 13.5), "SOM": ("Somalia", 9.1),
+    "ZAF": ("South Africa", 9.7), "SSD": ("South Sudan", 1.5),
+    "ESP": ("Spain", 7.5), "LKA": ("Sri Lanka", 1.5),
+    "SDN": ("Sudan", 6.2), "SUR": ("Suriname", 4.8),
+    "SWE": ("Sweden", 23.1), "CHE": ("Switzerland", 27.6),
+    "SYR": ("Syria", 3.9), "TJK": ("Tajikistan", 1.4),
+    "TZA": ("Tanzania", 1.4), "THA": ("Thailand", 15.1),
+    "TLS": ("Timor-Leste", 5.5), "TGO": ("Togo", 1.6),
+    "TTO": ("Trinidad and Tobago", 3.0),
+    "TUN": ("Tunisia", 1.0), "TUR": ("Turkey", 12.5),
+    "TKM": ("Turkmenistan", 3.8), "UGA": ("Uganda", 1.4),
+    "UKR": ("Ukraine", 9.9), "ARE": ("United Arab Emirates", 22.1),
+    "GBR": ("United Kingdom", 4.6),
+    "USA": ("United States", 120.5), "URY": ("Uruguay", 34.7),
+    "UZB": ("Uzbekistan", 1.7), "VEN": ("Venezuela", 18.5),
+    "VNM": ("Vietnam", 1.6), "YEM": ("Yemen", 52.8),
+    "ZMB": ("Zambia", 1.6), "ZWE": ("Zimbabwe", 2.8),
+}
+
+# Gun control strictness: custom ordinal scale 1-5
+# 1=Very Permissive, 2=Permissive, 3=Moderate, 4=Strict, 5=Very Strict
+# Format: code -> (name, strictness_level)
+_GUN_CONTROL_STRICTNESS_FALLBACK = {
+    "AFG": ("Afghanistan", 1), "ALB": ("Albania", 3),
+    "DZA": ("Algeria", 4), "AGO": ("Angola", 3),
+    "ARG": ("Argentina", 3), "ARM": ("Armenia", 3),
+    "AUS": ("Australia", 4), "AUT": ("Austria", 3),
+    "AZE": ("Azerbaijan", 4), "BHS": ("Bahamas", 3),
+    "BHR": ("Bahrain", 4), "BGD": ("Bangladesh", 4),
+    "BRB": ("Barbados", 3), "BLR": ("Belarus", 4),
+    "BEL": ("Belgium", 3), "BLZ": ("Belize", 2),
+    "BEN": ("Benin", 3), "BOL": ("Bolivia", 3),
+    "BIH": ("Bosnia and Herzegovina", 3),
+    "BWA": ("Botswana", 3), "BRA": ("Brazil", 3),
+    "BGR": ("Bulgaria", 3), "BFA": ("Burkina Faso", 3),
+    "BDI": ("Burundi", 4), "KHM": ("Cambodia", 4),
+    "CMR": ("Cameroon", 3), "CAN": ("Canada", 3),
+    "CAF": ("Central African Republic", 2),
+    "TCD": ("Chad", 3), "CHL": ("Chile", 3),
+    "CHN": ("China", 5), "COL": ("Colombia", 3),
+    "COG": ("Congo", 3), "COD": ("DR Congo", 3),
+    "CRI": ("Costa Rica", 3), "CIV": ("Cote d'Ivoire", 3),
+    "HRV": ("Croatia", 3), "CUB": ("Cuba", 4),
+    "CYP": ("Cyprus", 3), "CZE": ("Czech Republic", 2),
+    "DNK": ("Denmark", 4), "DOM": ("Dominican Republic", 3),
+    "ECU": ("Ecuador", 3), "EGY": ("Egypt", 4),
+    "SLV": ("El Salvador", 3), "ERI": ("Eritrea", 5),
+    "EST": ("Estonia", 3), "SWZ": ("Eswatini", 3),
+    "ETH": ("Ethiopia", 4), "FJI": ("Fiji", 4),
+    "FIN": ("Finland", 3), "FRA": ("France", 3),
+    "GAB": ("Gabon", 3), "GMB": ("Gambia", 3),
+    "GEO": ("Georgia", 3), "DEU": ("Germany", 3),
+    "GHA": ("Ghana", 3), "GRC": ("Greece", 3),
+    "GTM": ("Guatemala", 2), "GIN": ("Guinea", 3),
+    "GNB": ("Guinea-Bissau", 3), "GUY": ("Guyana", 3),
+    "HTI": ("Haiti", 2), "HND": ("Honduras", 2),
+    "HUN": ("Hungary", 4), "ISL": ("Iceland", 3),
+    "IND": ("India", 3), "IDN": ("Indonesia", 4),
+    "IRN": ("Iran", 4), "IRQ": ("Iraq", 2),
+    "IRL": ("Ireland", 4), "ISR": ("Israel", 3),
+    "ITA": ("Italy", 3), "JAM": ("Jamaica", 4),
+    "JPN": ("Japan", 5), "JOR": ("Jordan", 3),
+    "KAZ": ("Kazakhstan", 3), "KEN": ("Kenya", 4),
+    "KOR": ("South Korea", 4), "KWT": ("Kuwait", 3),
+    "KGZ": ("Kyrgyzstan", 3), "LAO": ("Laos", 4),
+    "LVA": ("Latvia", 3), "LBN": ("Lebanon", 2),
+    "LSO": ("Lesotho", 3), "LBR": ("Liberia", 3),
+    "LBY": ("Libya", 2), "LTU": ("Lithuania", 3),
+    "LUX": ("Luxembourg", 4), "MDG": ("Madagascar", 3),
+    "MWI": ("Malawi", 3), "MYS": ("Malaysia", 4),
+    "MLI": ("Mali", 3), "MLT": ("Malta", 4),
+    "MRT": ("Mauritania", 3), "MUS": ("Mauritius", 4),
+    "MEX": ("Mexico", 3), "MDA": ("Moldova", 4),
+    "MNG": ("Mongolia", 3), "MNE": ("Montenegro", 3),
+    "MAR": ("Morocco", 4), "MOZ": ("Mozambique", 3),
+    "MMR": ("Myanmar", 5), "NAM": ("Namibia", 3),
+    "NPL": ("Nepal", 4), "NLD": ("Netherlands", 4),
+    "NZL": ("New Zealand", 4), "NIC": ("Nicaragua", 3),
+    "NER": ("Niger", 3), "NGA": ("Nigeria", 3),
+    "NOR": ("Norway", 3), "OMN": ("Oman", 4),
+    "PAK": ("Pakistan", 2), "PAN": ("Panama", 3),
+    "PNG": ("Papua New Guinea", 3), "PRY": ("Paraguay", 2),
+    "PER": ("Peru", 3), "PHL": ("Philippines", 3),
+    "POL": ("Poland", 4), "PRT": ("Portugal", 3),
+    "QAT": ("Qatar", 4), "ROU": ("Romania", 4),
+    "RUS": ("Russia", 4), "RWA": ("Rwanda", 5),
+    "SAU": ("Saudi Arabia", 3), "SEN": ("Senegal", 3),
+    "SRB": ("Serbia", 2), "SLE": ("Sierra Leone", 3),
+    "SGP": ("Singapore", 5), "SVK": ("Slovakia", 3),
+    "SVN": ("Slovenia", 3), "SOM": ("Somalia", 1),
+    "ZAF": ("South Africa", 3), "SSD": ("South Sudan", 2),
+    "ESP": ("Spain", 3), "LKA": ("Sri Lanka", 4),
+    "SDN": ("Sudan", 2), "SUR": ("Suriname", 2),
+    "SWE": ("Sweden", 3), "CHE": ("Switzerland", 2),
+    "SYR": ("Syria", 3), "TJK": ("Tajikistan", 4),
+    "TZA": ("Tanzania", 4), "THA": ("Thailand", 3),
+    "TLS": ("Timor-Leste", 4), "TGO": ("Togo", 3),
+    "TTO": ("Trinidad and Tobago", 3),
+    "TUN": ("Tunisia", 4), "TUR": ("Turkey", 3),
+    "TKM": ("Turkmenistan", 5), "UGA": ("Uganda", 3),
+    "UKR": ("Ukraine", 3), "ARE": ("United Arab Emirates", 4),
+    "GBR": ("United Kingdom", 4),
+    "USA": ("United States", 1), "URY": ("Uruguay", 3),
+    "UZB": ("Uzbekistan", 4), "VEN": ("Venezuela", 3),
+    "VNM": ("Vietnam", 5), "YEM": ("Yemen", 1),
+    "ZMB": ("Zambia", 3), "ZWE": ("Zimbabwe", 3),
 }
