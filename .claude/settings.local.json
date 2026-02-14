@@ -9,7 +9,12 @@
       "WebFetch(domain:worldpopulationreview.com)",
       "WebFetch(domain:www.smallarmssurvey.org)",
       "WebFetch(domain:www.datapandas.org)",
-      "WebFetch(domain:www.steffenhurka.com)"
+      "WebFetch(domain:www.steffenhurka.com)",
+      "Bash(chmod:*)",
+      "Bash(./scripts/run_all.sh:*)",
+      "Bash(curl:*)",
+      "Bash(echo:*)",
+      "Bash(done)"
     ]
   }
 }

@@ -160,9 +160,15 @@ def get_gun_ownership_rates() -> pd.DataFrame:
 def get_gun_control_strictness() -> pd.DataFrame:
     """Get gun control strictness rating by country.
 
-    Custom ordinal scale 1-5:
-      1 = Very Permissive, 2 = Permissive, 3 = Moderate,
-      4 = Strict, 5 = Very Strict.
+    Custom ordinal scale 1-5 based on publicly available regulatory
+    information from GunPolicy.org and Library of Congress country reports.
+
+    Scale:
+      1 = Very Permissive — few restrictions on ownership/carry (e.g. USA, Yemen)
+      2 = Permissive — ownership common, modest licensing (e.g. Switzerland, Czech Republic)
+      3 = Moderate — licensing required, some category restrictions (e.g. Canada, France)
+      4 = Strict — ownership is a privilege, significant barriers (e.g. UK, Australia)
+      5 = Very Strict — civilian ownership effectively prohibited (e.g. Japan, China)
 
     Returns DataFrame with columns: country_code, country_name, gun_control_strictness.
     """
@@ -704,6 +710,23 @@ _GUN_OWNERSHIP_FALLBACK = {
 
 # Gun control strictness: custom ordinal scale 1-5
 # 1=Very Permissive, 2=Permissive, 3=Moderate, 4=Strict, 5=Very Strict
+#
+# Ratings based on publicly available information from:
+#   - GunPolicy.org (Sydney School of Public Health) country profiles
+#   - Library of Congress "Firearms-Control Legislation and Policy" reports
+#   - National legislation summaries
+#
+# Dimensions considered:
+#   - Civilian firearm ownership: right vs privilege vs prohibited
+#   - Licensing/permit requirements for purchase and possession
+#   - Background check and waiting period requirements
+#   - Restrictions on categories of firearms (handguns, semi-auto, full-auto)
+#   - Carry laws (concealed/open carry permissions)
+#   - Registration and record-keeping requirements
+#
+# This is a simplified composite — real regulatory environments are far more
+# nuanced than a single ordinal value can capture.
+#
 # Format: code -> (name, strictness_level)
 _GUN_CONTROL_STRICTNESS_FALLBACK = {
     "AFG": ("Afghanistan", 1), "ALB": ("Albania", 3),

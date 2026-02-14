@@ -17,6 +17,15 @@ NOTEBOOKS = [
     "05_population_correlation.ipynb",
     "06_gun_ownership_correlation.ipynb",
     "07_gun_control_correlation.ipynb",
+    "08_us_data_collection.ipynb",
+    "09_us_gun_homicide_map.ipynb",
+    "10_us_gini_correlation.ipynb",
+    "11_us_drug_correlation.ipynb",
+    "12_us_population_correlation.ipynb",
+    "13_us_poverty_correlation.ipynb",
+    "14_us_income_correlation.ipynb",
+    "15_us_gun_ownership_correlation.ipynb",
+    "16_us_gun_control_correlation.ipynb",
 ]
 
 
@@ -111,6 +120,8 @@ def main():
         html_fragment = extract_outputs(nb_path)
         if html_fragment:
             title = nb_name.replace(".ipynb", "").replace("_", " ").title()
+            # Strip leading number prefix like "01 " or "16 "
+            title = title.lstrip("0123456789 ")
             sections.append((title, html_fragment))
 
     nav_items = []
@@ -284,7 +295,7 @@ def main():
 </style>
 </head>
 <body>
-<h1>Gun Violence Country-Level Analysis — Full Report</h1>
+<h1>Gun Violence Analysis — Country-Level &amp; US County-Level Report</h1>
 <nav>
     {"".join(nav_items)}
 </nav>
@@ -292,7 +303,7 @@ def main():
 {"".join(content_sections)}
 
 <footer>
-    Generated from Jupyter notebooks. Data sources: World Bank, UNODC.
+    Generated from Jupyter notebooks. Data sources: World Bank, UNODC, Census ACS, CDC WONDER, FBI UCR, RAND, Giffords Law Center.
 </footer>
 </body>
 </html>"""
