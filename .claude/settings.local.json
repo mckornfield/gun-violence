@@ -14,7 +14,10 @@
       "Bash(./scripts/run_all.sh:*)",
       "Bash(curl:*)",
       "Bash(echo:*)",
-      "Bash(done)"
+      "Bash(done)",
+      "Bash(/Users/mckornfield/repo/gun-violence/.venv/bin/python:*)",
+      "WebFetch(domain:apxml.com)",
+      "WebFetch(domain:www.insiderllm.com)"
     ]
   }
 }

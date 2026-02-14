@@ -23,6 +23,17 @@ NOTEBOOKS=(
     14_us_income_correlation
     15_us_gun_ownership_correlation
     16_us_gun_control_correlation
+    17_us_mass_shooting_data
+    18_us_mass_shooting_map
+    19_us_mass_shooting_gini
+    20_us_mass_shooting_drug
+    21_us_mass_shooting_population
+    22_us_mass_shooting_poverty
+    23_us_mass_shooting_income
+    24_us_mass_shooting_gun_ownership
+    25_us_mass_shooting_gun_control
+    26_us_mental_illness_homicide
+    27_us_mass_shooting_mental_illness
 )
 
 echo "=== Running all notebooks in place ==="

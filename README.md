@@ -30,6 +30,27 @@ Analyzes correlations between gun homicide rates and socioeconomic/policy indica
 | 15 — US Gun Ownership Correlation | Gun homicide rate vs gun ownership % (state proxy) |
 | 16 — US Gun Control Correlation | Gun homicide rate vs Giffords gun law grade (state proxy) |
 
+### US County Mass Shooting Analysis (Notebooks 17-25)
+
+| Notebook | Description |
+|----------|-------------|
+| 17 — US Mass Shooting Data | Loads GVA data, computes per-capita rate, merges with county indicators |
+| 18 — US Mass Shooting Map | County choropleth + top/bottom 20 bar charts |
+| 19 — Mass Shooting vs Gini | Mass shooting rate vs Gini coefficient |
+| 20 — Mass Shooting vs Drugs | Mass shooting rate vs drug offense rate |
+| 21 — Mass Shooting vs Population | Mass shooting rate vs population (log-log) |
+| 22 — Mass Shooting vs Poverty | Mass shooting rate vs poverty rate |
+| 23 — Mass Shooting vs Income | Mass shooting rate vs median household income |
+| 24 — Mass Shooting vs Gun Ownership | Mass shooting rate vs gun ownership % (state proxy) |
+| 25 — Mass Shooting vs Gun Control | Mass shooting rate vs Giffords gun law grade (state proxy) |
+
+### Mental Illness Correlation (Notebooks 26-27)
+
+| Notebook | Description |
+|----------|-------------|
+| 26 — Gun Homicide vs Mental Illness | Gun homicide rate vs mental illness prevalence (state proxy) |
+| 27 — Mass Shooting vs Mental Illness | Mass shooting rate vs mental illness prevalence (state proxy) |
+
 ## Data Sources
 
 ### Country-Level
@@ -55,6 +76,8 @@ Analyzes correlations between gun homicide rates and socioeconomic/policy indica
 | Median household income | [Census ACS 2022](https://data.census.gov/) | ~100 counties | 2022 dollars |
 | Gun ownership (% households) | [RAND Corporation](https://www.rand.org/pubs/tools/TLA243-2-v2.html) | State-level proxy | Applied to all counties in each state |
 | Gun law grade | [Giffords Law Center](https://giffords.org/lawcenter/resources/scorecard/) | State-level proxy | 2023 scorecard; A+=12 to F=0 numeric scale |
+| Mass shooting incidents | [Gun Violence Archive](https://www.gunviolencearchive.org/) | ~100 counties | 2019-2023; definition: 4+ people shot (not including shooter) |
+| Mental illness prevalence (AMI %) | [SAMHSA NSDUH](https://www.samhsa.gov/data/nsduh) | State-level proxy | 2021-2022; "Any Mental Illness" among adults 18+ |
 
 ## Caveats
 
@@ -71,6 +94,8 @@ Analyzes correlations between gun homicide rates and socioeconomic/policy indica
 - **County boundaries ≠ city boundaries.** County-level data includes suburban and rural areas around major cities, which may dilute or amplify urban violence patterns.
 - **CDC suppression.** CDC WONDER suppresses counts below 10 for privacy. Some smaller counties may have unreliable or missing gun homicide data.
 - **FBI UCR reporting.** Drug offense rates depend on agency participation in the Uniform Crime Reporting program. Not all agencies report consistently.
+- **Mental illness as state proxy.** AMI prevalence is a state-level estimate (SAMHSA NSDUH). It measures *any* mental illness (including mild anxiety/depression), not severe mental illness specifically. County-level variation within states is not captured.
+- **Mass shooting small-count volatility.** Mass shootings (4+ people shot) are rare events. Even aggregated over 5 years (2019-2023), many counties have very low counts (1-4 incidents), making per-capita rates subject to substantial volatility. A single additional incident can drastically change a small county's rate.
 
 ## How to Run
 

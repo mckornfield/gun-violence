@@ -6,7 +6,8 @@ Analyzes correlations between gun homicide rates and socioeconomic indicators ac
 ## Architecture
 - `src/data_utils.py` — Country-level data: World Bank API (population, Gini), UNODC data (gun homicides, drug offenses), embedded fallbacks
 - `src/us_county_data.py` — US county-level embedded data (~100 counties) and getter functions. Joined on 5-digit FIPS codes.
-- `notebooks/` — Jupyter notebooks (01-16) that produce analysis outputs
+- `data/raw/us_county_mass_shootings.csv` — Mass shooting incident counts by county (Gun Violence Archive, 2019-2023)
+- `notebooks/` — Jupyter notebooks (01-27) that produce analysis outputs
 - `scripts/generate_html.py` — Generates a combined HTML report from notebook outputs
 
 ## Notebook Pipeline
@@ -32,6 +33,21 @@ Notebooks must run in order (later ones depend on CSVs from earlier ones):
 15. `15_us_gun_ownership_correlation` — Scatter + choropleth: gun homicide vs gun ownership % (state proxy)
 16. `16_us_gun_control_correlation` — Scatter + strip/box + choropleth: gun homicide vs Giffords grade (state proxy)
 
+### US County Mass Shooting Analysis (17-25)
+17. `17_us_mass_shooting_data` — Load GVA CSV + compute rate → `data/processed/merged_us_mass_shooting_data.csv`
+18. `18_us_mass_shooting_map` — County choropleth + top/bottom 20 bar charts
+19. `19_us_mass_shooting_gini` — Scatter + choropleth: mass shooting rate vs Gini coefficient
+20. `20_us_mass_shooting_drug` — Scatter + choropleth: mass shooting rate vs drug offense rate
+21. `21_us_mass_shooting_population` — Scatter: mass shooting rate vs population (log-log)
+22. `22_us_mass_shooting_poverty` — Scatter + choropleth: mass shooting rate vs poverty rate
+23. `23_us_mass_shooting_income` — Scatter + choropleth: mass shooting rate vs median household income
+24. `24_us_mass_shooting_gun_ownership` — Scatter + choropleth: mass shooting rate vs gun ownership % (state proxy)
+25. `25_us_mass_shooting_gun_control` — Scatter + strip/box + choropleth: mass shooting rate vs Giffords grade (state proxy)
+
+### Mental Illness Correlation (26-27)
+26. `26_us_mental_illness_homicide` — Scatter + choropleth: gun homicide rate vs mental illness prevalence (state proxy)
+27. `27_us_mass_shooting_mental_illness` — Scatter + choropleth: mass shooting rate vs mental illness prevalence (state proxy)
+
 ## Data Sources
 - **World Bank API** — Free, no key needed. Population (`SP.POP.TOTL`), Gini (`SI.POV.GINI`)
 - **UNODC** — Gun homicide rates, drug offense rates (embedded fallback data)
@@ -42,6 +58,8 @@ Notebooks must run in order (later ones depend on CSVs from earlier ones):
 - **FBI UCR** — US county drug offense rates (~2020)
 - **RAND Corporation** — State-level gun ownership estimates (proxy for counties)
 - **Giffords Law Center** — State gun law grades (2023, proxy for counties)
+- **Gun Violence Archive (GVA)** — Mass shooting incidents by county (2019-2023), stored as raw CSV (`data/raw/us_county_mass_shootings.csv`)
+- **SAMHSA NSDUH** — State-level "Any Mental Illness" (AMI) prevalence among adults 18+ (2021-2022), stored as raw CSV (`data/raw/us_state_mental_illness.csv`), used as state-level proxy for counties
 - Country datasets joined on ISO alpha-3 country codes
 - US county datasets joined on 5-digit FIPS codes (zero-padded strings)
 

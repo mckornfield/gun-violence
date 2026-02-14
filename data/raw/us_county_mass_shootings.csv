@@ -1,0 +1,102 @@
+fips,county_name,state,mass_shooting_incidents,years
+06037,Los Angeles County,CA,62,2019-2023
+17031,Cook County,IL,88,2019-2023
+48201,Harris County,TX,54,2019-2023
+04013,Maricopa County,AZ,28,2019-2023
+06073,San Diego County,CA,14,2019-2023
+06059,Orange County,CA,6,2019-2023
+12086,Miami-Dade County,FL,38,2019-2023
+48113,Dallas County,TX,32,2019-2023
+36047,Kings County,NY,22,2019-2023
+06065,Riverside County,CA,16,2019-2023
+04019,Pima County,AZ,8,2019-2023
+36081,Queens County,NY,10,2019-2023
+26163,Wayne County,MI,42,2019-2023
+06071,San Bernardino County,CA,18,2019-2023
+53033,King County,WA,12,2019-2023
+12011,Broward County,FL,14,2019-2023
+48029,Bexar County,TX,22,2019-2023
+06001,Alameda County,CA,14,2019-2023
+42101,Philadelphia County,PA,95,2019-2023
+48439,Tarrant County,TX,16,2019-2023
+36061,New York County,NY,6,2019-2023
+06085,Santa Clara County,CA,4,2019-2023
+12031,Duval County,FL,18,2019-2023
+12099,Palm Beach County,FL,10,2019-2023
+06067,Sacramento County,CA,16,2019-2023
+47157,Shelby County,TN,36,2019-2023
+29510,St. Louis City,MO,38,2019-2023
+29189,St. Louis County,MO,12,2019-2023
+13121,Fulton County,GA,20,2019-2023
+27053,Hennepin County,MN,14,2019-2023
+39035,Cuyahoga County,OH,22,2019-2023
+48141,El Paso County,TX,4,2019-2023
+55079,Milwaukee County,WI,28,2019-2023
+12057,Hillsborough County,FL,12,2019-2023
+37119,Mecklenburg County,NC,16,2019-2023
+06077,San Joaquin County,CA,10,2019-2023
+32003,Clark County,NV,24,2019-2023
+24510,Baltimore City,MD,52,2019-2023
+24005,Baltimore County,MD,6,2019-2023
+48453,Travis County,TX,10,2019-2023
+39049,Franklin County,OH,16,2019-2023
+06019,Fresno County,CA,10,2019-2023
+13089,DeKalb County,GA,12,2019-2023
+36005,Bronx County,NY,16,2019-2023
+12095,Orange County,FL,12,2019-2023
+18097,Marion County,IN,26,2019-2023
+39061,Hamilton County,OH,10,2019-2023
+51059,Fairfax County,VA,2,2019-2023
+48085,Collin County,TX,2,2019-2023
+06081,San Mateo County,CA,2,2019-2023
+06013,Contra Costa County,CA,8,2019-2023
+26125,Oakland County,MI,6,2019-2023
+12103,Pinellas County,FL,8,2019-2023
+08041,El Paso County,CO,4,2019-2023
+08031,Denver County,CO,12,2019-2023
+08001,Adams County,CO,6,2019-2023
+48215,Hidalgo County,TX,4,2019-2023
+21111,Jefferson County,KY,16,2019-2023
+01073,Jefferson County,AL,20,2019-2023
+40109,Oklahoma County,OK,18,2019-2023
+40143,Tulsa County,OK,12,2019-2023
+45091,York County,SC,3,2019-2023
+47037,Davidson County,TN,16,2019-2023
+22071,Orleans Parish,LA,30,2019-2023
+22033,East Baton Rouge Parish,LA,14,2019-2023
+51760,Richmond City,VA,12,2019-2023
+51810,Virginia Beach City,VA,4,2019-2023
+34013,Essex County,NJ,12,2019-2023
+34017,Hudson County,NJ,4,2019-2023
+34023,Middlesex County,NJ,2,2019-2023
+09003,Hartford County,CT,6,2019-2023
+09001,Fairfield County,CT,4,2019-2023
+25017,Middlesex County,MA,1,2019-2023
+25025,Suffolk County,MA,8,2019-2023
+25013,Hampden County,MA,6,2019-2023
+37183,Wake County,NC,8,2019-2023
+37063,Durham County,NC,8,2019-2023
+48355,Nueces County,TX,4,2019-2023
+53053,Pierce County,WA,8,2019-2023
+41051,Multnomah County,OR,10,2019-2023
+41005,Clackamas County,OR,2,2019-2023
+28049,Hinds County,MS,16,2019-2023
+05119,Pulaski County,AR,10,2019-2023
+01097,Mobile County,AL,10,2019-2023
+12001,Alachua County,FL,4,2019-2023
+20173,Sedgwick County,KS,8,2019-2023
+31055,Douglas County,NE,6,2019-2023
+19153,Polk County,IA,4,2019-2023
+46099,Minnehaha County,SD,2,2019-2023
+38017,Cass County,ND,1,2019-2023
+30111,Yellowstone County,MT,2,2019-2023
+56021,Laramie County,WY,1,2019-2023
+16001,Ada County,ID,2,2019-2023
+49035,Salt Lake County,UT,4,2019-2023
+33011,Hillsborough County,NH,1,2019-2023
+50007,Chittenden County,VT,1,2019-2023
+10003,New Castle County,DE,6,2019-2023
+44007,Providence County,RI,4,2019-2023
+15003,Honolulu County,HI,1,2019-2023
+02020,Anchorage Municipality,AK,3,2019-2023
+11001,District of Columbia,DC,22,2019-2023

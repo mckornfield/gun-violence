@@ -1,0 +1,102 @@
+fips,county_name,state,frequent_mental_distress_pct,source_year
+06037,Los Angeles County,CA,15.8,2022
+17031,Cook County,IL,14.9,2022
+48201,Harris County,TX,14.6,2022
+04013,Maricopa County,AZ,15.3,2022
+06073,San Diego County,CA,13.8,2022
+06059,Orange County,CA,12.4,2022
+12086,Miami-Dade County,FL,14.7,2022
+48113,Dallas County,TX,15.1,2022
+36047,Kings County,NY,14.5,2022
+06065,Riverside County,CA,15.6,2022
+04019,Pima County,AZ,17.2,2022
+36081,Queens County,NY,13.1,2022
+26163,Wayne County,MI,18.4,2022
+06071,San Bernardino County,CA,16.1,2022
+53033,King County,WA,13.2,2022
+12011,Broward County,FL,13.9,2022
+48029,Bexar County,TX,15.8,2022
+06001,Alameda County,CA,12.7,2022
+42101,Philadelphia County,PA,18.1,2022
+48439,Tarrant County,TX,13.7,2022
+36061,New York County,NY,13.0,2022
+06085,Santa Clara County,CA,11.2,2022
+12031,Duval County,FL,15.9,2022
+12099,Palm Beach County,FL,13.5,2022
+06067,Sacramento County,CA,15.4,2022
+47157,Shelby County,TN,17.8,2022
+29510,St. Louis City,MO,20.3,2022
+29189,St. Louis County,MO,14.1,2022
+13121,Fulton County,GA,14.3,2022
+27053,Hennepin County,MN,13.4,2022
+39035,Cuyahoga County,OH,17.1,2022
+48141,El Paso County,TX,16.9,2022
+55079,Milwaukee County,WI,17.5,2022
+12057,Hillsborough County,FL,14.8,2022
+37119,Mecklenburg County,NC,13.9,2022
+06077,San Joaquin County,CA,16.7,2022
+32003,Clark County,NV,16.0,2022
+24510,Baltimore City,MD,19.8,2022
+24005,Baltimore County,MD,14.0,2022
+48453,Travis County,TX,13.3,2022
+39049,Franklin County,OH,15.7,2022
+06019,Fresno County,CA,17.4,2022
+13089,DeKalb County,GA,14.8,2022
+36005,Bronx County,NY,17.0,2022
+12095,Orange County,FL,14.2,2022
+18097,Marion County,IN,17.3,2022
+39061,Hamilton County,OH,15.2,2022
+51059,Fairfax County,VA,10.5,2022
+48085,Collin County,TX,11.8,2022
+06081,San Mateo County,CA,11.0,2022
+06013,Contra Costa County,CA,12.6,2022
+26125,Oakland County,MI,13.6,2022
+12103,Pinellas County,FL,15.5,2022
+08041,El Paso County,CO,14.1,2022
+08031,Denver County,CO,14.9,2022
+08001,Adams County,CO,15.3,2022
+48215,Hidalgo County,TX,18.7,2022
+21111,Jefferson County,KY,16.4,2022
+01073,Jefferson County,AL,17.6,2022
+40109,Oklahoma County,OK,17.9,2022
+40143,Tulsa County,OK,17.3,2022
+45091,York County,SC,14.5,2022
+47037,Davidson County,TN,15.0,2022
+22071,Orleans Parish,LA,18.2,2022
+22033,East Baton Rouge Parish,LA,16.8,2022
+51760,Richmond City,VA,18.5,2022
+51810,Virginia Beach City,VA,13.7,2022
+34013,Essex County,NJ,14.6,2022
+34017,Hudson County,NJ,13.8,2022
+34023,Middlesex County,NJ,11.9,2022
+09003,Hartford County,CT,14.3,2022
+09001,Fairfield County,CT,12.1,2022
+25017,Middlesex County,MA,12.0,2022
+25025,Suffolk County,MA,15.4,2022
+25013,Hampden County,MA,17.1,2022
+37183,Wake County,NC,12.8,2022
+37063,Durham County,NC,14.4,2022
+48355,Nueces County,TX,16.5,2022
+53053,Pierce County,WA,15.0,2022
+41051,Multnomah County,OR,16.2,2022
+41005,Clackamas County,OR,13.5,2022
+28049,Hinds County,MS,19.4,2022
+05119,Pulaski County,AR,18.0,2022
+01097,Mobile County,AL,18.3,2022
+12001,Alachua County,FL,15.7,2022
+20173,Sedgwick County,KS,16.1,2022
+31055,Douglas County,NE,13.7,2022
+19153,Polk County,IA,14.2,2022
+46099,Minnehaha County,SD,13.9,2022
+38017,Cass County,ND,13.1,2022
+30111,Yellowstone County,MT,15.6,2022
+56021,Laramie County,WY,15.1,2022
+16001,Ada County,ID,14.4,2022
+49035,Salt Lake County,UT,14.8,2022
+33011,Hillsborough County,NH,13.3,2022
+50007,Chittenden County,VT,14.0,2022
+10003,New Castle County,DE,14.9,2022
+44007,Providence County,RI,15.2,2022
+15003,Honolulu County,HI,12.3,2022
+02020,Anchorage Municipality,AK,15.5,2022
+11001,District of Columbia,DC,16.3,2022

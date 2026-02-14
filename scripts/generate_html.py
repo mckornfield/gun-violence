@@ -26,6 +26,17 @@ NOTEBOOKS = [
     "14_us_income_correlation.ipynb",
     "15_us_gun_ownership_correlation.ipynb",
     "16_us_gun_control_correlation.ipynb",
+    "17_us_mass_shooting_data.ipynb",
+    "18_us_mass_shooting_map.ipynb",
+    "19_us_mass_shooting_gini.ipynb",
+    "20_us_mass_shooting_drug.ipynb",
+    "21_us_mass_shooting_population.ipynb",
+    "22_us_mass_shooting_poverty.ipynb",
+    "23_us_mass_shooting_income.ipynb",
+    "24_us_mass_shooting_gun_ownership.ipynb",
+    "25_us_mass_shooting_gun_control.ipynb",
+    "26_us_mental_illness_homicide.ipynb",
+    "27_us_mass_shooting_mental_illness.ipynb",
 ]
 
 
@@ -303,7 +314,7 @@ def main():
 {"".join(content_sections)}
 
 <footer>
-    Generated from Jupyter notebooks. Data sources: World Bank, UNODC, Census ACS, CDC WONDER, FBI UCR, RAND, Giffords Law Center.
+    Generated from Jupyter notebooks. Data sources: World Bank, UNODC, Census ACS, CDC WONDER, FBI UCR, RAND, Giffords Law Center, Gun Violence Archive, SAMHSA NSDUH.
 </footer>
 </body>
 </html>"""
